@@ -4,7 +4,7 @@ since it was manually entered. Print out the details of any produce that has in 
 as well as the calculated total that shows the discrepancy.
 '''
 
-ProduceDictionary={
+ProduceDictionary = {
     'Potatoes': {
         'cost': 0.86,
         'amt_sold': 39.8,
@@ -48,7 +48,7 @@ ProduceDictionary={
     'Celery': {
         'cost': 3.07,
         'amt_sold': 18.5,
-        'total': 56.8
+        'total': 56.79
     },
     'Spinach': {
         'cost': 4.12,
@@ -193,7 +193,7 @@ ProduceDictionary={
     'Brussels sprouts': {
         'cost': 1.65,
         'amt_sold': 22.9,
-        'total': 37.79
+        'total': 37.78
     },
     'Kale': {
         'cost': 5.02,
@@ -207,3 +207,34 @@ ProduceDictionary={
     }
 }
 
+# my answer
+# list1 = ProduceDictionary
+# for item in list1:
+#     price = ProduceDictionary[item]['cost']
+#     quantity = ProduceDictionary[item]['amt_sold']
+#     total = ProduceDictionary[item]['total']
+#     check = round(float(price)*float(quantity), 2)
+#     if check != total:
+#         print(f'{item} total is not correct.')
+#         print(f"Original total was {total}")
+#         print(f"Recalculated total is {check}\n")
+
+# prints all produce names, produce is not a dictionary yet, type and print functions
+# are helpful to show what we are working with
+# for produce in ProduceDictionary:
+#     print(produce)
+#     print(type(produce))
+
+# real answer
+print(ProduceDictionary)
+# for produce in ProduceDictionary:
+#     cost = ProduceDictionary[produce]['cost']
+#     amt_sold = ProduceDictionary[produce]["amt_sold"]
+#     stated_total = ProduceDictionary[produce]["total"]
+
+#     calc_total = round(cost * amt_sold, 2)
+#     if calc_total != stated_total:
+#         print(f"Produce Name: {produce}")
+#         print(f"Calculated Total: ${calc_total:.2f}")
+#         print(f"Stated Total: ${stated_total:.2f}")
+#         print()
